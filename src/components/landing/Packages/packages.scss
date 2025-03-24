@@ -1,0 +1,238 @@
+.packagesmainprnt {
+    background-image: url('../../../Assests/bgimg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    // position: relative;
+    // z-index: 999;
+
+    .maincntconatiner {
+        max-width: 1015px;
+        padding: 20px 26px;
+        border-radius: 20px;
+        border: 1px solid var(--Stroke, #EAEBED);
+        background: var(--Bcakground-color, #F9F9F9);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        gap: 25px;
+        margin-top: 148px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+
+
+        .headercntpackages {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+            gap: 20px;
+
+            .h3 {
+                color: var(--Text-primary-Dark, #282828);
+
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+            }
+
+            p {
+                color: var(--Secondary-text, #949494);
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .cardpackages {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            .cardone {
+                padding: 25px;
+                border-radius: 12px;
+                border: 1px solid var(--Stroke, #EAEBED);
+                background: var(--Color, #FFF);
+
+                .headercardone {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 50px;
+                    width: 100%;
+
+                    .headerstylecardone {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+
+                        h6 {
+                            color: #129F07;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            margin-bottom: 8px;
+                        }
+
+                        h3 {
+
+                            color: #282828;
+                            font-size: 60px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 65px;
+                            letter-spacing: -2px;
+                            margin: 0px;
+                            display: flex;
+                            align-items: end;
+                            justify-content: flex-end;
+
+                            .firstprice {
+                                color: #282828;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 65px;
+                                letter-spacing: -0.8px;
+                            }
+
+                            .secpricesub {
+                                color: #282828;
+                                font-size: 17px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 29px;
+                                letter-spacing: -0.094px;
+                            }
+                        }
+
+                        p {
+                            color: #949494;
+
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 26px;
+                            letter-spacing: -0.1px;
+                        }
+                    }
+
+                    .cntmaincardone {
+                        display: flex;
+
+                        flex-direction: column;
+                        align-items: start;
+                        align-items: start;
+                        gap: 15px;
+
+                        h2 {
+                            color: #282828;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 120%;
+                            display: flex;
+                            gap: 15px;
+                            align-items: center;
+                        }
+                    }
+
+                    .btncardonemain {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 33px;
+                        width: 100%;
+
+                        h4 {
+                            color: #282828;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 120%;
+                            white-space: nowrap;
+
+                            span {
+                                color: #999;
+
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 120%;
+                            }
+                        }
+
+                        .packagesstartbtn {
+                            padding: 8px 25px;
+                            border: none;
+                            border-radius: 26px;
+                            color: var(--Color, #FFF);
+                            white-space: nowrap;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            width: 115px;
+                            line-height: normal;
+                            background: var(--Primary-Green, #129F07);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-primary {
+        width: 370x;
+        color: var(--Color, #FFF);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        text-transform: uppercase;
+        border-radius: 15px;
+        border: none !important;
+        background: var(--Primary-Green, #129F07);
+    }
+
+
+}
+
+
+
+@media (max-width: 991px) {
+    .packagesmainprnt .maincntconatiner .cardpackages {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 690px) {
+    .packagesmainprnt .maincntconatiner .cardpackages {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .packagesmainprnt .maincntconatiner .cardpackages .cardone .headercardone .cntmaincardone h2 {
+        font-size: 16px !important;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none !important;
+}
